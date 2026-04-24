@@ -1,0 +1,473 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Noto Sans", sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* activa un desplazamiento suave en toda la página, al aplicarlo a la etiqueta html afecta a todo el viewport*/
+
+body {
+    background-color: #ffffff;
+}
+
+.top-nave a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+.logo {
+    font-size: 25px;
+}
+
+.top-nave {
+    padding: 20px 60px;
+    display: flex;
+    background-color: #e8e8e8;
+}
+
+.menu {
+    display: flex;
+    flex: 1;
+    gap: 25px;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+/* fondo principal */
+.landing-page {
+    background-size: cover;
+    height: 90vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    animation: slideFotos 8s infinite alternate;
+}
+
+@keyframes slideFotos {
+
+    0%,
+    45% {
+        background-image: url(img/1.jpeg);
+        margin-left: 0;
+    }
+
+    50%,
+    95% {
+        background-image: url(img/img7.jpg);
+        -ms-transform-origin-x: 200%;
+    }
+
+    100% {
+        background-image: url(img/1.jpeg);
+        margin-left: 0%;
+    }
+}
+
+.landing-page h1 {
+    text-align: center;
+    padding: 9vh 20vh;
+    font-size: 10vh;
+    color: aliceblue;
+    -webkit-text-stroke: 1px black;
+    /*WebKit es un motor de renderizador de codigo abierto desarrollado por apple, 
+    -webkit- es el prefijo en css que seria como una regla especifica para aplicar 
+    estilos en navegadores con este motor de renderizado.*/
+
+}
+
+.landing-page p {
+    text-align: center;
+    position: relative;
+    top: 40vh;
+    color: #ffffff;
+    padding-left: 40vh;
+    padding-right: 40vh;
+    font-size: 20px;
+}
+
+
+.info-section {
+    display: flex;
+    margin-left: 70px;
+    padding: 40px;
+    align-items: flex-start;
+}
+
+
+aside {
+    width: 50%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+article {
+    width: 50%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+
+.imgs-info {
+    width: 100%;
+    margin: 0;
+}
+
+.imgs-info2 {
+    width: 100%;
+    margin: 0;
+}
+
+/*foto grande*/
+.img1 {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.img2 {
+    width: 50%;
+    border-radius: 10px;
+    margin-right: 4px;
+}
+
+.img3 {
+    width: 50%;
+    border-radius: 10px;
+}
+
+/*fotos de abajo*/
+.img-down {
+    display: flex;
+}
+
+/* cambia el color al seleccionar las palabras, quita el azul maluco */
+::selection {
+    background-color: black;
+    color: white;
+}
+
+.info-view {
+    margin: 20px;
+    margin-top: 10px;
+    margin-right: 40px;
+}
+
+.info-view h2 {
+    font-size: 50px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #000000;
+}
+
+.info-view .parraf {
+    margin-left: 30px;
+    margin-right: 60px;
+}
+
+.info-view p {
+    text-align: center;
+}
+
+.time-img {
+    width: 20px;
+    height: auto;
+    position: relative;
+    top: 1.9px;
+}
+
+.time-img2 {
+    width: 17px;
+    height: auto;
+    position: relative;
+    top: 1.9px;
+}
+
+.time-info {
+    margin: 10px;
+}
+
+.time-info b {
+    color: #000000;
+}
+
+iframe {
+    width: 100%;
+    height: 280px;
+}
+
+.servicios {
+    background-color: #000000;
+    flex-wrap: wrap;
+    padding-top: 40px;
+}
+
+.servi-header h2 {
+    text-align: center;
+    font-size: 30px;
+    color: white;
+}
+
+.servi-header p {
+    text-align: center;
+    margin-top: 10px;
+    margin-left: 50px;
+    margin-right: 50px;
+    color: white;
+}
+
+
+.header-grid {
+    margin-left: 50px;
+    margin-right: 50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 16px;
+    padding: 2rem;
+    align-items: start;
+}
+
+.servi-card {
+    background: #fff;
+    border: 1px solid #e0d5c8;
+    border-radius: 12px;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.servi-icon {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: #0a0a0a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.servi-icon svg {
+    width: 22px;
+    height: 22px;
+    fill: #f5ede3;
+}
+
+.footer {
+    background-color: #fff;
+    border-top: 1px solid #e0d5c8;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    padding: 2rem;
+}
+
+.footer-logo a {
+    font-size: 20px;
+    color: #000000;
+    text-decoration: none;
+}
+
+.footer-social {
+    display: flex;
+    gap: 16px;
+}
+
+.footer-social a {
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-social svg {
+    width: 20px;
+    height: 20px;
+    fill: #000000;
+}
+
+.footer-copy {
+    font-size: 13px;
+    color: #888;
+    margin: 0;
+}
+
+.map-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 60%;
+    height: 0;
+    overflow: hidden;
+}
+
+.map-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+/*pagina de la galeria*/
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(750px, 1fr));
+    gap: 15px;
+    padding: 40px;
+}
+
+.gallery img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+}
+
+h2 {
+    text-align: center;
+    margin-top: 40px;
+}
+
+/* pantalla movil */
+@media screen and (max-width: 600px) {
+
+    .top-nave {
+        display: block;
+        padding: 15px;
+    }
+
+    .logo {
+        text-align: center;
+        padding-bottom: 10px;
+    }
+
+    .menu {
+        justify-content: center;
+        width: 100%;
+    }
+
+    .landing-page {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .landing-page h1 {
+        padding: 0;
+        font-size: 38px;
+        text-align: center;
+    }
+
+    .landing-page p {
+        position: static;
+        padding: 0 20px;
+        margin-top: 15px;
+        text-align: center;
+        max-width: 90%;
+    }
+
+    .info-section {
+        flex-direction: column;
+        margin-left: 0;
+        padding: 20px;
+    }
+
+    aside {
+        width: 100%;
+        margin-left: 0;
+        order: 1;
+    }
+
+    article {
+        width: 100%;
+        order: 2;
+        margin-top: 20px;
+    }
+
+    .imgs-info,
+    .imgs-info2 {
+        width: 100%;
+        margin: 0;
+    }
+
+    .img-down {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .img2,
+    .img3 {
+        width: 100%;
+        margin: 0;
+    }
+
+    .info-view {
+        margin: 10px;
+    }
+
+    .info-view h2 {
+        font-size: 32px;
+    }
+
+    .info-view .parraf {
+        margin: 10px;
+    }
+}
+
+/*pantalla de tablet a pc pa arriba*/
+@media screen and (max-width: 1000px) {
+
+    .info-section {
+        flex-direction: column;
+        margin-left: 0;
+        padding: 20px;
+    }
+
+    aside,
+    article {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    article {
+        margin-top: 20px;
+    }
+
+
+    .info-view {
+        margin: 10px;
+        margin-right: 10px;
+    }
+
+    .info-view h2 {
+        font-size: 36px;
+    }
+
+    .info-view p {
+        text-align: center;
+    }
+
+    .info-view .parraf {
+        margin: 10px;
+    }
+
+    .imgs-info,
+    .imgs-info2 {
+        width: 100%;
+        margin: 0;
+    }
+}
